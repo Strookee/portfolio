@@ -4,132 +4,128 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Subhradeep Ghosh | Portfolio</title>
-  <style>
-    /* General Body Styling */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f0f0f0;
-      color: #333;
-    }
-
-    /* Header Styling */
-    header {
-      background: #007bff;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
-
-    /* Navigation Styling */
-    nav {
-      background: #333;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-    }
-
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-size: 1rem;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Section Styling */
-    section {
-      padding: 20px;
-      background: #fff;
-      margin: 20px;
-      border-radius: 8px;
-    }
-
-    section h2 {
-      font-size: 1.8rem;
-      color: #333;
-    }
-
-    section p {
-      font-size: 1rem;
-      color: #555;
-    }
-
-    section ul {
-      font-size: 1rem;
-      color: #555;
-      padding-left: 20px;
-    }
-
-    section li {
-      margin: 10px 0;
-    }
-
-    /* Footer Styling */
-    footer {
-      text-align: center;
-      padding: 10px;
-      background: #222;
-      color: #fff;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
-<body>
-  <header>
-    <h1>Subhradeep Ghosh</h1>
-    <p>Web Developer | ML & AI Enthusiast | CSE Student at KIIT</p>
-  </header>
+<body class="dark">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      
+      
+      <h1 class="glow">Subhradeep Ghosh</h1>
+      <span id="typed-text" class="typed"></span>
 
-  <nav>
+      <div class="social-links">
+        <a href="https://github.com/Strookee" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/subhradeep-ghosh01/" target="_blank">LinkedIn</a>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <nav class="navbar">
     <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
     <a href="#projects">Projects</a>
+    <a href="#internship">Internships</a>
+    <a href="#roles">Roles</a>
+    <a href="#certifications">Certifications</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a Computer Science undergraduate at KIIT (CGPA 8.2), passionate about solving real-world problems with technology. I have hands-on experience in web development, machine learning, and chatbot creation using DistilBERT and GoEmotions. I enjoy blending creativity with tech to build impactful solutions.
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Emotion-Aware Chatbot:</strong> Built using DistilBERT and OpenRouter API with Gradio UI.</li>
-      <li><strong>AI Freelancing Platform:</strong> Smart matching and recommendations using ML and GenAI.</li>
-      <li><strong>Portfolio Website:</strong> Created with HTML5 and CSS and deployed via GitHub Pages.</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: subhradeepghosh060@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/Strookee" target="_blank">github.com/Strookee</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/subhradeep-ghosh01/" target="_blank">subhradeep-ghosh01</a></p>
-  </section>
+  <!-- Main Sections -->
+  <main>
+    <section id="about"><h2>About Me</h2>
+      <p>I’m a 4th-year Computer Science student who thrives at the intersection of innovation, logic, and cutting-edge technology. My journey so far has been shaped by curiosity, hands-on learning, and the desire to build solutions that create real-world impact.
+      <br><br>
+      I specialize in web development and have an evolving expertise in Artificial Intelligence and Machine Learning. I’ve developed empathetic NLP-powered chatbots, AI-enhanced platforms, and containerized document intelligence systems using tools like PyMuPDF, HuggingFace Transformers, Docker, and scikit-learn. I love working on complex systems that involve data, learning, and automation.
+      <br><br>
+      I’m passionate about designing scalable and modular solutions, whether it’s a smart search engine or a dynamic web interface. My goal is to continuously learn, build meaningful products, and collaborate with teams that value purpose-driven innovation.</p>
+    </section>
+    <section id="skills"><h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Java, C, HTML, CSS, JavaScript, Shellscript, AutoCad, Python, Kotlin</li>
+        <li><strong>Databases:</strong> MySQL, MongoDB</li>
+        <li><strong>Platforms:</strong> Ubuntu, WSL, Windows, Google Cloud, Excel</li>
+        <li><strong>Relevant Coursework:</strong> OOPJ, DSA, OS, DBMS, AI, ML, Software Engineering, Computer Networks (CISCO CCNA certified)</li>
+        <li><strong>Soft Skills:</strong> Teamwork, Critical Thinking, Leadership, Effective Communication</li>
+      </ul>
+    </section>
+    <section id="education"><h2>Education</h2>
+      <ul>
+        <li><strong>KIIT:</strong> BTech CSE (CGPA - 8.51), Sept 2022 – June 2026</li>
+        <li><strong>St. Xavier’s School:</strong> Apr 2009 – Apr 2020</li>
+        <li><strong>Hem Sheela Model School:</strong> Apr 2020 – Apr 2022</li>
+      </ul>
+    </section>
+    <section id="projects"><h2>Projects</h2>
+      <div class="project">
+        <h3>Containerized PDF Analysis Solution</h3>
+        <ul>
+          <li>Structured outline extraction and persona-based semantic search</li>
+          <li>Offline execution using PyMuPDF, Sentence Transformers, scikit-learn</li>
+          <li>Modular Docker-based design for scalability</li>
+        </ul>
+      </div>
+      <div class="project">
+        <h3>Sentiment Analysis Chatbot</h3>
+        <ul>
+          <li>Emotion-aware chatbot using DistilBERT + GoEmotions</li>
+          <li>Empathetic responses via OpenRouter API + Gradio UI</li>
+        </ul>
+      </div>
+      <div class="project">
+        <h3>AI Freelancing Platform</h3>
+        <ul>
+          <li>Smart match & personalized recommendations</li>
+          <li>Dynamic review system using AI/ML, GenAI</li>
+        </ul>
+      </div>
+    </section>
+    <section id="internship"><h2>Internships</h2>
+      <ul>
+        <li><strong>Google Android Virtual Internship:</strong> Completed a three-month virtual internship focusing on modern Android application development using Kotlin, Jetpack, and Android Studio. Developed intuitive UI components, optimized layouts for performance, and integrated backend features.</li>
+        <li><strong>SAIL, Durgapur (Steel Authority of India Limited):</strong> Underwent industrial training in one of India’s largest steel manufacturing plants. Gained hands-on experience in industrial automation, control systems, production safety, and real-time monitoring technologies.</li>
+      </ul>
+    </section>
+    <section id="roles"><h2>Roles</h2>
+      <p>R&D Team – Kraya And Kuber, AEWS Society KIIT</p>
+    </section>
+    <section id="certifications"><h2>Certifications</h2>
+      <p>CCNA, Google Developers, DSA, OOPJ, Web Dev, AI, ML</p>
+    </section>
+    <section id="contact">
+  <h2>Contact</h2>
+      <p>Email: <a href="mailto:subhradeepghosh060@gmail.com">subhradeepghosh060@gmail.com</a></p>
+      <p>Phone: <a href="tel:+918145231097">+91 81452 31097</a></p>
+    </section>
+    <button id="backToTop" title="Go to top">⬆</button>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Subhradeep Ghosh</p>
+    <p>&copy; 2025 Subhradeep Ghosh | Crafted with ❤️</p>
   </footer>
+
+  <!-- Scripts -->
+  <script>
+    new Typed("#typed-text", {
+      strings: ["4th-Year CSE Student", "Web Developer", "ML Enthusiast", "Docker + NLP Engineer"],
+      typeSpeed: 60,
+      backSpeed: 30,
+      loop: true
+    });
+    document.querySelectorAll('.navbar a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+    const topBtn = document.getElementById("backToTop");
+    window.onscroll = () => topBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  </script>
 </body>
 </html>
