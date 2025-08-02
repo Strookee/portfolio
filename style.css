@@ -1,1 +1,197 @@
+/* === Base Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #0e0e10;
+  color: #eee;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+a {
+  color: #00d9ff;
+  text-decoration: none;
+}
+h1.glow {
+  font-size: 2.8rem;
+  color: #fff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #00f0ff, 0 0 40px #00f0ff;
+}
+h2 {
+  color: #00f0ff;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #00f0ff;
+  margin-bottom: 1rem;
+}
+
+/* === Hero Section === */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem 1rem;
+  background: radial-gradient(ellipse at center, #1c1c1f 0%, #0e0e10 100%);
+  text-align: center;
+}
+.hero-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #00f0ff;
+  margin-bottom: 1rem;
+}
+#typed-text {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-top: 0.5rem;
+}
+.hero-socials img {
+  width: 32px;
+  margin: 0 0.5rem;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+.hero-socials img:hover {
+  transform: scale(1.15);
+}
+
+/* === Navbar === */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #141418f0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+.navbar a {
+  color: #eee;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+.navbar a:hover {
+  background: #00f0ff20;
+}
+
+/* === Sections === */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+section {
+  margin-bottom: 3rem;
+}
+ul {
+  list-style: square inside;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
+.project {
+  background: #1c1c20;
+  border-left: 5px solid #00f0ff;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 15px #00f0ff20;
+}
+.project h3 {
+  color: #00f0ff;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1a1a1a;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* === Scroll-to-Top Button === */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 1.2rem;
+  background: #00f0ff;
+  color: #000;
+  border: none;
+  padding: 0.6rem 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 0 10px #00f0ff80;
+  z-index: 999;
+}
+#backToTop:hover {
+  background: #00c0e8;
+}
+
+/* === Responsive === */
+@media screen and (max-width: 768px) {
+  .hero h1.glow {
+    font-size: 2rem;
+  }
+  .hero-img {
+    width: 110px;
+    height: 110px;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+}
+.resume-photo {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.resume-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #00f0ff;
+  box-shadow: 0 0 10px #00f0ff88;
+  object-fit: cover;
+}
+.resume-photo.animated {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  animation: pop-in 1s ease forwards;
+}
+.resume-photo.animated img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid #00f0ff;
+  box-shadow: 0 0 15px #00f0ff80, 0 0 25px #00f0ff60 inset;
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.resume-photo.animated img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px #00f0ffcc, 0 0 30px #00f0ff99 inset;
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
